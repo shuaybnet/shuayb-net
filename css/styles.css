@@ -1,0 +1,144 @@
+/* ------------------------------------------
+   Reset & Base
+------------------------------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #1c1c1c;
+  --color-surface: #2a2a2a;
+  --color-text: #e0e0e0;
+  --color-primary: #569cd6;
+  --color-accent: #d7ba7d;
+  --color-danger: #d16969;
+  --color-success: #4ec9b0;
+
+  --font-sans: "Inter", "IBM Plex Sans", system-ui, sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --radius: 2px;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* ------------------------------------------
+   Layout Containers
+------------------------------------------- */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-md) 0;
+}
+
+/* ------------------------------------------
+   Header & Nav
+------------------------------------------- */
+.site-header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav li + li {
+  margin-left: var(--space-md);
+}
+
+.main-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--color-primary);
+}
+
+/* ------------------------------------------
+   Hero Section
+------------------------------------------- */
+.hero {
+  background-color: var(--color-surface);
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.hero h2 {
+  font-size: 2.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: #b0b0b0;
+}
+
+/* ------------------------------------------
+   Footer
+------------------------------------------- */
+.site-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid #3f3f3f;
+  color: #aaa;
+  text-align: center;
+  padding: var(--space-sm) 0;
+  font-size: 0.875rem;
+}
+
+.site-footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------------
+   Responsive
+------------------------------------------- */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav li + li {
+    margin-left: 0;
+    margin-top: var(--space-xs);
+  }
+}
