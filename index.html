@@ -2,27 +2,52 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />"
-        <title>shuayb.net home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ShuaybNet – Shuayb Abdullah’s Hub for Writing & OSS</title>
+        <meta name="description" content="Shuayb Abdullah’s personal site shuaybnet—your hub for Shuayb’s writing, open-source projects, and progress." />
+        <link rel="canonical" href="https://shuayb.net/" />
 
         <link rel="manifest" href="manifest.json" />
-
         <link rel="stylesheet" href="css/styles.css" />
-
         <link rel="icon" href="images/favicon.ico" />
-        <meta name="theme-color" content="#2b2b2b" />
+        
+        <!-- Open Graph for social sharing -->
+        <meta property="og:title" content="ShuaybNet – Shuayb Abdullah’s Hub" />
+        <meta property="og:description" content="Explore shuaybnet: Shuayb Abdullah’s writing, open-source projects & progress." />
+        <meta property="og:url" content="https://shuayb.net/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://shuayb.net/images/og-image.png" />
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ShuaybNet – Shuayb Abdullah’s Hub" />
+        <meta name="twitter:description" content="Your go-to for shuaybnet: Shuayb Abdullah’s writing, code, and progress." />
+        <meta name="twitter:image" content="https://shuayb.net/images/og-image.png" />
+        
+        <!-- JSON-LD structured data -->
+        <script type="application/ld+json">
+         {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Shuayb Abdullah",
+            "url": "https://shuayb.net/",
+            "sameAs": [
+            "https://github.com/shuaybnet",
+            "https://twitter.com/shuaybnet",
+            "https://linkedin.com/in/shuaybnet"
+            ]
+         }
+     </script>
     </head>
 
     <body>
         <header class="site-header">
             <div class="container">
-                <h1 class="logo"><a href="/">shuayb.net</a></h1>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="/blog/">Blog</a></li>
                         <li><a href="/projects/">Projects</a></li>
                         <li><a href="/progress/">Progress</a></li>
-                        <li><a href="/sitemap.xml">Sitemap</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,7 +55,7 @@
 
         <section class="hero">
             <div class="container">
-                <h2>Welcome to shuayb.net</h2>
+                <h1>Welcome to shuayb.net</h1>
                 <p>Your hub for my latest writing, open-source work, and personal progress.</p>
             </div>
         </section>
@@ -39,7 +64,8 @@
             <div class="container">
             <p>© 2025 Shuayb Abdullah</p>
             <p><a href="/robots.txt">Robots.txt</a> | <a href="/sitemap.xml">Sitemap</a></p>
-        </div>
+            </div>
+        </footer>    
 
     </body>
 </html>
